@@ -58,6 +58,10 @@ import EditAttendance from "./pages/EditAttendance/EditAttendance";
 
 import SubmitAnswer from "./pages/Exam submission/submitAnswer";
 import ExamReport from "./pages/Report-exam/examReport";
+import Footer from "./components/Footer/Footer";
+
+//import social follows
+import SocialFollow from "./Social/SocialFollow";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -142,6 +146,8 @@ function App() {
 
           {/* Payment function route */}
           <Route path="/student/uploadSlip" component={AddPayment} />
+          
+          <Footer />
         </Switch>
       </Router>
     </div>
